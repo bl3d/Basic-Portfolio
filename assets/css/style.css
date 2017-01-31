@@ -2,49 +2,119 @@
 /* Main (global) page styles */
 
 body{
-	
+	color: #777777;
+	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+	background: url('../images/cork-wallet.png') repeat repeat;	
+
+	/*yes, only more modern browsers, but I'm ok with old browesers getting boring footer*/
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;	
+}
+
+h1, h2{
+	font-family: 'Georgia', Times, Times New Roman, serif;
+	color: #4aaaa5;
+	font-weight: bold;
 }
 
 h1{
-
+	font-size: 34px;
+	padding: 10px 0px 30px 0px;
+	border-bottom: 3px solid #dddddd;
+	margin-bottom: 30px;
 }
-h2{
 
+h2{
+	font-size: 24px;
+	padding: 0px 0px 20px 0px;
+	border-bottom: 1px solid #dddddd;
+	margin-bottom: 25px;	
 }
 
 p{
-
+	font-size: 18px;
+	line-height: 32px;
 }
 
 a{
-
+	text-decoration: none;
+	color: inherit;
 }
 
 
 
 header{
-
+	position: relative;
+	top: 0;
+	width: 100%;
+	height: 100px;
+	background-color: #ffffff;
+	border-bottom: solid 2px #cccccc;
 }
 
 #mainLogo{
-
+	position: absolute;
+	bottom: 0px;
+	width: 280px;
+	height: 90px;
+	background-color: #4aaaa5;
+	color: #fff;
+	font-size: 34px;
+	font-weight: bold;
+	z-index: 50;
+	text-align: center;
+	line-height: 90px;
+	font-family: 'Georgia', Times, Times New Roman, serif;
 }
 
 ul#navLinks{
-
+	position: absolute;
+	z-index: 50;
+	right: 0;
+	line-height: 100px;
 }
+
 li.mainLink{
+	list-style: none;
+	float: left;
+}
 
+.mainLink a{
+	padding: 2px 20px;
+	border-right: solid 1px #dddddd;
+}
+
+li.mainLink:last-child a{
+	padding: 2px 0px 2px 20px;
+	border-right: none !important;	
 }
 
 
 
-.masterWidth{
-
+.masterWidth{ 
+	position: relative;
+	width: 960px;
+	height: 100%;
+	margin:0 auto;
 }
+
+.container{
+	position: relative;
+	margin-top: 40px;
+	flex: 1;	 
+}
+ 
+
 
 #mainContent{
-
+	position: relative;
+	width: 588px;
+	background-color: #ffffff;
+	border: solid 1px #dddddd;
+	overflow: auto;
+	padding: 30px;
+	margin-bottom: 40px;
 }
 
 
@@ -52,17 +122,28 @@ li.mainLink{
 /* global "connect with Me" (social channels) styles */
 
 #socialConnect{
-
+	position: absolute;
+	top: 0;
+	left: 690px;
+	width: 210px;
+	padding: 30px;
+	background: #ffffff;	
 }
 
 ul#socailConnectMenu{
-
+	position: relative;
+	text-align: center;
 }
+
 li.socialConnect{
-
+	list-style: none;
+	display: inline-block;
+	padding-right: 7px;
 }
 
-
+li.socialConnect:last-child{
+	padding-right: 0px !important;
+}
 
 
 
@@ -72,6 +153,7 @@ li.socialConnect{
 	position: relative;
 	width: 200px;
 	float: left;
+	padding: 0px 25px 15px 0px;
 }
 
 
@@ -91,9 +173,19 @@ li.socialConnect{
 /* global footer styles */
 
 footer{
-
+	position: relative; 
+	width: 100%;
+	height: 95px;
+	background-color: #666666;
+	border-top: solid 5px #4aaaa5;
 }
 
 #copyrightInfo{
-	
+	color: #cccccc;
+	width: 100%;
+	text-align: center;
+	line-height: 95px;
+	vertical-align: middle;
+	display: block;
+	font-size: 14px;
 }
