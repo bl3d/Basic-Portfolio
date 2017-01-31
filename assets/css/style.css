@@ -161,7 +161,23 @@ li.socialConnect:last-child{
 
 /* contact page styles */
 
+input[type=text], select, textarea {
+    width: 565px;
+    padding: 8px 10px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #dddddd;
+    color: #cccccc;
+}
 
+input[type=submit] { 
+    background-color: #4aaaa5; 
+    padding: 10px 30px;
+    border: none; 
+    cursor: pointer;
+    color: #ffffff;
+    font-size: 18px;
+}
 
 
 
